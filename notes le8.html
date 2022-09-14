@@ -1,0 +1,105 @@
+<!--var color=new Array("Red", "Green", "Blue"); these are literal strings as text. 
+var colors=["Red", "Green", "Blue"]; this is an even simpler method
+            0       1       2
+
+Array Elements
+
+arrayname.length, this returns a number indicating how many elements are in the array
+
+color.length, this line returns 3 because there are 3 elements in that array
+
+ArraySort() and Reverse() methods
+
+.sort organizes elements into ascending order from A-Z
+
+.reverse reverse whatever order elements happen to be in it at the moment.
+
+if you apply .reverse, right after .sort, you'll get descending order Z-A
+
+for Loops
+
+provides a means of repeating a loop a predetermined number of times, while at the same time Incrementing (increasing) of decrementing
+(decreasing) the value of some variable with each pass through the loop. simple english a loop can:
+
+-count from up to any number
+-count forward or backwards
+-start at any number and end at any number
+
+for (start; condition; increment) {
+    code to be executed
+}
+
+
+while loops
+
+these loops repeat one or more lines of code as long as some condition remains true. this does not need to be a counter with 
+some incrementing number.
+
+while and do while loops
+
+while loops syntax is
+
+while (condition) {
+    code to be executed
+}
+
+do while
+
+do {
+    code to be executed
+} while (condition)
+
+the decision whether to repeat the loop is at the top of the while loop and at the bottom of the do while loop, in both syntaxes
+replace the placeholders with your own information
+
+condition: an expression that defines the"as long as" condition that determines when the loop stops repeating 
+
+code to be executed: code to be executed with each pass through the loop
+
+the main difference between the 2 loops is that the while loop might not repeat at all, but the do while loop is guaranteed to
+repeat at least once. That's because with the while loop, the decision as the whether or not to do the statement inside the loop
+is made at the top. 
+
+Switch Statement
+
+switch(value)
+{
+    case x1
+    code to execute;
+    break;
+    case x2
+    code to execute;
+    break;
+    ***
+    default:
+    code to execute;
+}
+
+ternary operators
+
+usually to assign a value to a variable
+condition ? return if true : return if false; 
+
+condtion: this must be an expresion that evaluates to true or false.
+return if true: the value returned ifthe condition is true
+return if false: the value returned ifthe condition is false.
+
+var age = 64
+var admission = "Your cost: $" + (age < 60 ? "7.50" : "5.00"); 
+
+We start by creating a variable named age, and we put a number in it. (In real life, the user might enter that number, 
+or it may be determined through some other means.) Next, we create a variable named admission, which starts off as the string 
+"Your cost: $". Then, added to that is either 7.50 or 5.00, depending on the value of age.
+
+    If the age variable contains a value that's less than 60, then the admission variable receives the complete value "Your cost: $7.50".
+    If the age variable contains a value that isn't less than 60, the admission variable ends up with the value "Your cost: $5.00".
+
+so basically, the ternary operator does exactly what the if statement below does, it just does it with less code
+
+var age = 64
+var admission = "Your cost: $"
+if (age < 60) {
+    admission += "7.50"
+} else {
+    admission += "5.00"
+}
